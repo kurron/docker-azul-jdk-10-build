@@ -1,4 +1,4 @@
 #!/bin/bash
 
-docker pull azul/zulu-openjdk:9
+docker pull azul/zulu-openjdk:10
 docker-compose build --pull

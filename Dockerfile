@@ -2,7 +2,7 @@
 # and https://store.docker.com/images/openjdk
 
 # Base image off of the official Ubuntu-based image
-FROM azul/zulu-openjdk:9
+FROM azul/zulu-openjdk:10
 
 ENV DOCKER_VERSION=18.03.0-ce
 ENV COMPOSE_VERSION=1.21.0
@@ -20,8 +20,8 @@ RUN groupadd --system powerless --gid 1000 && \
 WORKDIR /home/powerless
 
 # Set standard Java environment variables
-ENV JAVA_HOME /usr/lib/jvm/zulu-9-amd64
-ENV JDK_HOME /usr/lib/jvm/zulu-9-amd64
+ENV JAVA_HOME /usr/lib/jvm/zulu-10-amd64
+ENV JDK_HOME /usr/lib/jvm/zulu-10-amd64
 
 # have Ansible examine the container, by default
 CMD ["/usr/bin/ansible", "all", "--inventory=localhost,", "--verbose", "--connection=local", "-m setup"]

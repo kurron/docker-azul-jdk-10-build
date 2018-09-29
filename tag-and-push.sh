@@ -4,8 +4,8 @@
 UNIXTIME=$(date +%s)
 
 # docker tag SOURCE_IMAGE[:TAG] TARGET_IMAGE[:TAG]
-docker tag dockerazuljdk10build_azul-jdk-10:latest kurron/docker-azul-jdk-10-build:latest
-docker tag dockerazuljdk10build_azul-jdk-10:latest kurron/docker-azul-jdk-10-build:${UNIXTIME}
+docker tag docker-azul-jdk-10-build_azul-jdk-10:latest kurron/docker-azul-jdk-10-build:latest
+docker tag docker-azul-jdk-10-build_azul-jdk-10:latest kurron/docker-azul-jdk-10-build:${UNIXTIME}
 docker images
 
 # Usage:  docker push [OPTIONS] NAME[:TAG]

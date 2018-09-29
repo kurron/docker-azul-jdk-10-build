@@ -29,6 +29,6 @@ CMD="docker run --hostname inside-docker \
                 --volume /etc/passwd:/etc/passwd \
                 --volume /etc/group:/etc/group \
                 --workdir $(pwd) \
-                dockerazuljdk10build_azul-jdk-10:latest $*"
+                docker-azul-jdk-10-build_azul-jdk-10:latest $*"
 echo $CMD
 $CMD
